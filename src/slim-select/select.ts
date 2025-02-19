@@ -41,12 +41,10 @@ export default class Select {
 
   public hideUI(): void {
     this.select.tabIndex = -1
-    this.select.style.display = 'none'
   }
 
   public showUI(): void {
     this.select.removeAttribute('tabindex')
-    this.select.style.display = ''
   }
 
   public changeListen(listen: boolean) {

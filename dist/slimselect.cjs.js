@@ -1363,11 +1363,9 @@ class Select {
     }
     hideUI() {
         this.select.tabIndex = -1;
-        this.select.style.display = 'none';
     }
     showUI() {
         this.select.removeAttribute('tabindex');
-        this.select.style.display = '';
     }
     changeListen(listen) {
         this.listen = listen;
