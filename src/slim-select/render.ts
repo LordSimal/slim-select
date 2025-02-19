@@ -329,7 +329,7 @@ export default class Render {
     // For example if event is mouse click or tachpad click this condition prevent refocus on element
     // because click by mouse change focus position and not need return focus to element.
     if (eventType !== 'click') {
-      this.main.main.focus({ preventScroll: true })
+      // this.main.main.focus({ preventScroll: true })
     }
   }
 
@@ -734,7 +734,7 @@ export default class Render {
         // Grab input value
         const inputValue = this.content.search.input.value.trim()
         if (inputValue === '') {
-          this.content.search.input.focus()
+          // this.content.search.input.focus()
           return
         }
 
@@ -817,7 +817,7 @@ export default class Render {
   }
 
   public searchFocus(): void {
-    this.content.search.input.focus()
+    // this.content.search.input.focus()
   }
 
   public getOptions(notPlaceholder = false, notDisabled = false, notHidden = false): HTMLDivElement[] {

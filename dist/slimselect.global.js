@@ -550,9 +550,6 @@ var SlimSelect = (function () {
             };
         }
         mainFocus(eventType) {
-            if (eventType !== 'click') {
-                this.main.main.focus({ preventScroll: true });
-            }
         }
         placeholder() {
             const placeholderOption = this.store.filter((o) => o.placeholder, false);
@@ -850,7 +847,6 @@ var SlimSelect = (function () {
                     }
                     const inputValue = this.content.search.input.value.trim();
                     if (inputValue === '') {
-                        this.content.search.input.focus();
                         return;
                     }
                     const runFinish = (oo) => {
@@ -915,7 +911,6 @@ var SlimSelect = (function () {
             return searchReturn;
         }
         searchFocus() {
-            this.content.search.input.focus();
         }
         getOptions(notPlaceholder = false, notDisabled = false, notHidden = false) {
             let query = '.' + this.classes.option;
