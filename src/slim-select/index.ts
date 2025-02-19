@@ -398,7 +398,7 @@ export default class SlimSelect {
     }
 
     // If we arent tabbing focus back on the main element
-    this.render.mainFocus(eventType)
+    // this.render.mainFocus(eventType)
 
     // Update settings
     this.settings.isOpen = false

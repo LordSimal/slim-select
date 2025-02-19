@@ -1939,7 +1939,6 @@ class SlimSelect {
         if (this.render.content.search.input.value !== '') {
             this.search('');
         }
-        this.render.mainFocus(eventType);
         this.settings.isOpen = false;
         this.settings.isFullOpen = false;
         setTimeout(() => {
